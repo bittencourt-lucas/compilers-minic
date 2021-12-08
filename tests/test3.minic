@@ -4,10 +4,10 @@ int double(int number) {
 }
 
 int main() {
-  int two = 2;
+  int minus_two = -2;
   // Calling the function
-  int four = double(2);
-  printint(four);
+  int minus_four = double(2);
+  printint(minus_four);
 
   return 0;
 }
