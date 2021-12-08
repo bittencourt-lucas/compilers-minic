@@ -30,7 +30,7 @@ class Lexer:
       elif (re.search(comment[1], word)):
         token_types.append((comment[0], word))
       else:
-        token_types.append((TokenType.INVALID))
+        token_types.append((TokenType.INVALID, word))
     return token_types
 
   def create_tokens(self, token_types: list) -> list:
@@ -51,7 +51,7 @@ class Lexer:
     buffer = []
     for expression in expressions:
       if '//' in expression:
-        expression = expression
+        expression = expression.strip()
         buffer.append(expression)
       elif '"' in expression:
         expression = expression.strip().replace("(", "\n").replace(")", "").replace(";", "").split("\n")

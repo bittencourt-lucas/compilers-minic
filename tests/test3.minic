@@ -1,0 +1,13 @@
+// This function will double the value received
+int double(int number) {
+  return number * 2;
+}
+
+int main() {
+  int two = 2;
+  // Calling the function
+  int four = double(2);
+  printint(four);
+
+  return 0;
+}

@@ -1,0 +1,10 @@
+int main() {
+  int _a = 5 * 2 + 50;
+  int _b = 100 / 3 - 27;
+
+  int check_less_than = _a < _b;
+  printf("Is _a less than _b?");
+  printint(check_less_than);
+
+  return 0;
+}

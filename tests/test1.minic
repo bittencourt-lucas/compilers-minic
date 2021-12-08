@@ -1,8 +1,6 @@
-// This a MiniC Program
+// This a Hello World MiniC Program
 
 int main() {
-  int x = 159;
   printf("Hello World");
-  printint(x);
   return 0;
 }

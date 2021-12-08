@@ -1,0 +1,19 @@
+int is_true(int expression) {
+  int verifier = 0;
+  return verifier < expression;
+}
+
+int main() {
+  int _foo = 1;
+  int _bar = 1;
+  int foobar = _foo && _bar;
+
+  // Nesting functions to see what happens
+  printint(is_true(foobar));
+
+  // It works!
+  printf("If the above number is 0, then it's false!");
+  printf("If the above number is 1, then it's true!");
+
+  return 0;
+}
