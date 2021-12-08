@@ -6,7 +6,7 @@ keyword = (TokenType.KEYWORD, '(^int$|^printf$|^printint$|^return$)')
 identifier = (TokenType.IDENTIFIER, '^[a-zA-Z_$][a-zA-Z_$0-9]*$')
 integer = (TokenType.INTEGER, '^([-]?[1-9]\d*|0)$')
 string = (TokenType.STRING, '^\".*\"$')
-operator = (TokenType.OPERATOR, '^(\+|\-|\/|\*|<|&&|=)$')
+operator = (TokenType.OPERATOR, '^(\+|\-|\/|\*|<|&&|=|!)$')
 comment = (TokenType.COMMENT, '^\/\/.*$')
 
 buffer = [
